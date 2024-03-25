@@ -19,6 +19,10 @@ public class RunRepository {
         return runs;
     }
 
+    void create(Run run) {
+//        runs.
+    }
+
     Optional<Run> findById(Integer id) {
         return runs.stream()
                 .filter(run -> run.id() == id)
