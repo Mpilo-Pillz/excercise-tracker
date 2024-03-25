@@ -25,9 +25,10 @@ public record Run(
             throw new IllegalArgumentException("Completed On must be after Started On");
         }
 
-        if(startedOn.isBefore(completedOn)) {
-            throw new IllegalArgumentException("Started On Date acannot be before Completed On")
-        }
+//        if(startedOn.isBefore(completedOn)) {
+//            throw new IllegalArgumentException("Started On Date acannot be before Completed On");
+//        }
+
 
     }
 }
