@@ -2,6 +2,10 @@ package dev.mpilearning.runnerz.run;
 
 import java.time.LocalDateTime;
 
+/**
+ * Immutable
+ * Saves up doing toString, contructior, Getters, Setters, equals etc
+ * */
 public record Run(
         Integer id,
         String title,
@@ -10,4 +14,5 @@ public record Run(
         Integer miles,
         Location location
 ) {
+
 }
