@@ -1,6 +1,7 @@
 package dev.mpilearning.runnerz.run;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,8 +20,8 @@ public class RunController {
         return this.runRepository.findAll();
     }
 
-    @GetMapping("/1")
-    Run findById() {
-        return runRepository.findById(1);
+    @GetMapping("/{id}")
+    Run findById(@PathVariable Integer id) {
+        return runRepository.findById(id);
     }
 }
