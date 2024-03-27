@@ -23,14 +23,14 @@ public class RunnerzApplication {
 		log.info("Exercise - Application Started Successfully");
 	}
 
-	@Bean
-	CommandLineRunner runner(RunRepository runRepository) {
-		return args -> {
-			Run run = new Run(2, "First run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5, Location.OUTDOOR);
-			log.info("Run:" + run);
-			runRepository.create(run);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner(RunRepository runRepository) {
+//		return args -> {
+//			Run run = new Run(2, "First run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5, Location.OUTDOOR);
+//			log.info("Run:" + run);
+//			runRepository.create(run);
+//		};
+//	}
 
 }
 
